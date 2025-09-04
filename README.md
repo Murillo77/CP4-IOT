@@ -7,6 +7,8 @@
 - Cicero Serafim | RM556996  
 - Eduardo Miguel | RM555871  
 
+**link do vídeo**
+Link: https://youtu.be/fv9fNMF7fZs
 ---
 
 ## Descrição do Projeto

@@ -1,0 +1,1 @@
+RMS e PTP capturam características diferentes do sinal. RMS mede a energia média e o PTP indica a amplitude máxima. Juntas permitem diferenciar estados do sinal e aplicar a lógica XOR.

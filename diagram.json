@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-v1", "id": "esp32", "top": -12.32, "left": -43.2, "attrs": {} },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": -116.5,
+      "left": -29,
+      "attrs": { "value": "50%" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_true",
+      "top": 54,
+      "left": 157.4,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_true",
+      "top": 109.55,
+      "left": 96,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_false",
+      "top": -22.8,
+      "left": 147.8,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_false",
+      "top": 51.95,
+      "left": 76.8,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "pot1:SIG", "esp32:34", "green", [] ],
+    [ "pot1:VCC", "esp32:3V3", "red", [] ],
+    [ "pot1:GND", "esp32:GND", "black", [] ],
+    [ "esp32:2", "r_true:1", "yellow", [] ],
+    [ "r_true:2", "led_true:A", "yellow", [] ],
+    [ "led_true:C", "esp32:GND", "black", [] ],
+    [ "esp32:4", "r_false:1", "blue", [] ],
+    [ "r_false:2", "led_false:A", "blue", [] ],
+    [ "led_false:C", "esp32:GND", "black", [] ],
+    [ "pot1:SIG", "esp32:D34", "green", [ "v0" ] ],
+    [ "esp32:D2", "r_true:1", "green", [ "h0" ] ],
+    [ "esp32:D4", "r_false:1", "green", [ "h0" ] ],
+    [ "led_false:C", "esp32:GND.1", "green", [ "v0" ] ],
+    [ "led_true:C", "esp32:GND.2", "green", [ "v0" ] ]
+  ],
+  "serialMonitor": { "display": "always", "newline": "lf", "convertEol": false },
+  "dependencies": {}
+}

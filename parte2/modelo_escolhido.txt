@@ -1,0 +1,7 @@
+Optamos pela Decision Tree por ser uma solução mais simples e prática de aplicar no ESP32. Durante os testes, ela demonstrou boa capacidade de classificar corretamente os dados e apresentou resultados interpretáveis, o que a torna adequada para implementação no hardware.
+
+// Guilherme Paes Camargo | RM555166
+// Icaro Albuquerque | RM555131
+// Murillo Santanna | RM557183
+// Cicero Serafim | RM556996
+// Eduardo Miguel | RM555871
